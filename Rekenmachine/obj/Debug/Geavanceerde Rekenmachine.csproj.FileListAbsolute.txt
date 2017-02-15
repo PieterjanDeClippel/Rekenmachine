@@ -1,0 +1,6 @@
+C:\Users\Gebruiker\Documents\Visual Studio 2013\Projects\Rekenmachine\Rekenmachine\bin\Debug\Rekenmachine.exe
+C:\Users\Gebruiker\Documents\Visual Studio 2013\Projects\Rekenmachine\Rekenmachine\bin\Debug\Rekenmachine.pdb
+C:\Users\Gebruiker\Documents\Visual Studio 2013\Projects\Rekenmachine\Rekenmachine\obj\Debug\Rekenmachine.Properties.Resources.resources
+C:\Users\Gebruiker\Documents\Visual Studio 2013\Projects\Rekenmachine\Rekenmachine\obj\Debug\Geavanceerde Rekenmachine.csproj.GenerateResource.Cache
+C:\Users\Gebruiker\Documents\Visual Studio 2013\Projects\Rekenmachine\Rekenmachine\obj\Debug\Rekenmachine.exe
+C:\Users\Gebruiker\Documents\Visual Studio 2013\Projects\Rekenmachine\Rekenmachine\obj\Debug\Rekenmachine.pdb

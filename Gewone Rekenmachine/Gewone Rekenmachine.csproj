@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9929769B-99B5-4E9A-8B57-9D3537ED3586}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gewone_Rekenmachine</RootNamespace>
+    <AssemblyName>Gewone Rekenmachine</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4B8D864554F3B667594DDF15090A8DE3F0CDFD3E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Gewone Rekenmachine_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Functies\CodeFunctie\Instructies\For_Loop.cs" />
+    <Compile Include="Functies\CodeFunctie\Instructies\Assignment.cs" />
+    <Compile Include="Functies\CodeFunctie\Instructies\Declaration.cs" />
+    <Compile Include="Functies\CodeFunctie\Basis\Block.cs" />
+    <Compile Include="enHoekmaat.cs" />
+    <Compile Include="Functies\Forms\EnumBewerken.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functies\Forms\EnumBewerken.Designer.cs">
+      <DependentUpon>EnumBewerken.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functies\Forms\EnumElementBewerken.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functies\Forms\EnumElementBewerken.Designer.cs">
+      <DependentUpon>EnumElementBewerken.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Functies\Forms\frmFuncties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functies\Forms\frmFuncties.Designer.cs">
+      <DependentUpon>frmFuncties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functies\Forms\NieuweFunctie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functies\Forms\NieuweFunctie.Designer.cs">
+      <DependentUpon>NieuweFunctie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functies\Forms\TussendoorBerekening.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functies\Forms\TussendoorBerekening.Designer.cs">
+      <DependentUpon>TussendoorBerekening.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functies\Functie.cs" />
+    <Compile Include="Functies\Klassen\GrafischeFunctie.cs" />
+    <Compile Include="Functies\Klassen\Parameter.cs" />
+    <Compile Include="Functies\CodeFunctie\TekstFunctie.cs" />
+    <Compile Include="Functies\Klassen\Tmp_Param.cs" />
+    <Compile Include="Functies\Klassen\tmp_var.cs" />
+    <Compile Include="Hoofdscherm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hoofdscherm.Designer.cs">
+      <DependentUpon>Hoofdscherm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functies\Forms\ParameterBewerken.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functies\Forms\ParameterBewerken.Designer.cs">
+      <DependentUpon>ParameterBewerken.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoForm.Designer.cs">
+      <DependentUpon>InfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functies\CodeFunctie\Basis\Instructie.cs" />
+    <Compile Include="Functies\CodeFunctie\Instructies\MethodCall.cs" />
+    <Compile Include="Functies\CodeFunctie\Exceptions\InvalidHeaderException.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Functies\CodeFunctie\Instructies\While_Loop.cs" />
+    <Compile Include="Functies\CodeFunctie\Compiler\Variabele.cs" />
+    <EmbeddedResource Include="Functies\Forms\EnumBewerken.resx">
+      <DependentUpon>EnumBewerken.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functies\Forms\EnumElementBewerken.resx">
+      <DependentUpon>EnumElementBewerken.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functies\Forms\frmFuncties.resx">
+      <DependentUpon>frmFuncties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functies\Forms\NieuweFunctie.resx">
+      <DependentUpon>NieuweFunctie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functies\Forms\TussendoorBerekening.resx">
+      <DependentUpon>TussendoorBerekening.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hoofdscherm.resx">
+      <DependentUpon>Hoofdscherm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functies\Forms\ParameterBewerken.resx">
+      <DependentUpon>ParameterBewerken.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoForm.resx">
+      <DependentUpon>InfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Gewone Rekenmachine_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pi1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pi2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pi3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
